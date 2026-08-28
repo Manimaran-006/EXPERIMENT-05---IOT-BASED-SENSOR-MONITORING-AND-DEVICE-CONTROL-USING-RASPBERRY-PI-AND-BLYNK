@@ -2,10 +2,10 @@
 
 ---
 
-### **NAME:**  
-### **DEPARTMENT:**  
-### **ROLL NO:**  
-### **DATE OF EXPERIMENT:**  
+### **NAME: Manimaran V**  
+### **DEPARTMENT:  B.Tech-IT**  
+### **ROLL NO: 212224220060**  
+### **DATE OF EXPERIMENT: 29.08.2026**  
 
 ---
 
@@ -45,8 +45,7 @@ The IR sensor and LDR sensor are connected to the input GPIO pins of the Raspber
 The LED, buzzer, and relay module are connected to the output GPIO pins. These devices act as output indicators or control devices. The relay can control external electrical loads, while the LED and buzzer provide visual and audio alerts.
 Raspberry Pi connects to the internet through Wi-Fi and communicates with the Blynk cloud server. The Blynk mobile application displays the sensor values and allows the user to control the output devices remotely. When a command is given from the Blynk app, Raspberry Pi processes the command and activates or deactivates the connected output devices.
 
-<img width="806" height="444" alt="image" src="https://github.com/user-attachments/assets/06b2e0f9-9ab9-43af-a918-be035454db50" />
-
+<img width="1042" height="695" alt="image" src="https://github.com/user-attachments/assets/05b34c40-1e93-4eb0-892d-ea30fcd6c59d" />
 
 
  ### FIGURE-02 CIRCUIT DIAGRAM: 
@@ -91,6 +90,7 @@ Raspberry Pi connects to the internet through Wi-Fi and communicates with the Bl
 8.	Configure the program to receive commands from the Blynk app to control the LED, buzzer, and relay.
 9.	Run the program in Raspberry Pi.
 10.	Observe the sensor values in the Blynk application and control the output devices using the app interface.
+    
 ### **Algorithm / Program Flow:** 
 1.	Start the program.
 2.	Import the required libraries for GPIO control and Blynk communication.
@@ -107,37 +107,54 @@ o	Switch the relay ON or OFF.
 10.	Stop the program when required.
 
 ---
+## Circuit Diagram
 
-## **CIRCUIT DIAGRAM:**  
-### **Connections:**  
-### **GPIO Pin Connection Table:** 
-|  Device  | 	Raspberry Pi GPIO Pin	  |  Purpose
----
-|  IR Sensor Output	  | 	GPIO 17		  |  Detect object presence
----
-|  LDR Sensor Output	  | 	GPIO 27		  |  Detect light intensity
----
-|  Relay Module	  | 	GPIO 22		  |  Control external load
----
-|  LED	  | 	GPIO 23		  |  Visual indication
----
-|  Buzzer	  | 	GPIO 24		  |  Sound alert
----
-|  VCC	  | 	5V Pin		  |  Power supply
----
-|  GND	  | 	GND Pin		  |  Common ground
+### GPIO Pin Connection Table
+
+| Device | Raspberry Pi GPIO Pin | Purpose |
+|---|---|---|
+| IR Sensor Output | GPIO 17 | Detect object presence |
+| LDR Sensor Output | GPIO 27 | Detect light intensity |
+| Relay Module | GPIO 22 | Control external load |
+| LED | GPIO 23 | Visual indication |
+| Buzzer | GPIO 24 | Sound alert |
+| VCC | 5V Pin | Power supply |
+| GND | GND Pin | Common ground |
 
 ---
+
+## Working Principle
+
+1. The **IR sensor** detects the presence of an object.
+2. The **LDR sensor** senses the light intensity in the environment.
+3. The Raspberry Pi reads sensor values through GPIO pins.
+4. Sensor values are sent to the **Blynk dashboard**.
+5. The relay, LED, and buzzer can be controlled through the Blynk app.
+6. The system provides real-time monitoring and remote control.
+
 ---
+
+## Blynk Virtual Pins
+
+| Virtual Pin | Function |
+|---|---|
+| V0 | IR Sensor Value |
+| V1 | LDR Sensor Value |
+| V2 | Relay Control |
+| V3 | LED Control |
+| V4 | Buzzer Control |
+
+---
+
 
 ## **Sample Python Code for Raspberry Pi + Blynk**  
-```python
+```
 import RPi.GPIO as GPIO
 import BlynkLib
 import time
 
 # Blynk Authentication Token
-BLYNK_AUTH = 'Your_Blynk_Auth_Token'
+BLYNK_AUTH = 'fl5MkIyvkYWqNRJn76TkAHPrwNRond8l'
 
 # Initialize Blynk
 blynk = BlynkLib.Blynk(BLYNK_AUTH)
@@ -146,13 +163,13 @@ blynk = BlynkLib.Blynk(BLYNK_AUTH)
 GPIO.setmode(GPIO.BCM)
 
 # Sensor Pins
-IR_PIN = 17
-LDR_PIN = 27
+IR_PIN = 23
+LDR_PIN = 24
 
 # Output Pins
-RELAY = 22
-LED = 23
-BUZZER = 24
+RELAY = 18
+LED = 25
+BUZZER = 17
 
 GPIO.setup(IR_PIN, GPIO.IN)
 GPIO.setup(LDR_PIN, GPIO.IN)
@@ -200,54 +217,58 @@ while True:
     blynk.virtual_write(1, ldr_value)
 
     time.sleep(1)
-
-...
 ```
+
 ---
 ## **Expected Output (Blynk App Interface)**
+
 ### **Learners should capture screenshots of the Blynk mobile application showing the following widgets:**
+
 ### **Screen 1 – Sensor Monitoring**
 •	Label Widget (V0) → Displays IR Sensor Value (Object Detected / Not Detected)
 •	Label Widget (V1) → Displays LDR Sensor Value (Light / Dark)
+
 ### **Screen 2 – Device Control**
 •	Button Widget (V2) → Relay ON/OFF
 •	Button Widget (V3) → LED ON/OFF
 •	Button Widget (V4) → Buzzer ON/OFF
+
 ### **Screen 3 – Hardware Output**
+
 #### **When the buttons are pressed in the Blynk app:**
 •	LED turns ON/OFF
 •	Buzzer produces sound
 •	Relay switches the connected load
+<img width="590" height="1278" alt="IMG_3508" src="https://github.com/user-attachments/assets/d80804c8-0f88-4567-8965-58c3506e2535" />
+
 ### **Learners should attach:**
 1.	Screenshot of the Blynk dashboard showing sensor values.
 2.	Screenshot of device control buttons.
 3.	Photo of hardware setup with Raspberry Pi and sensors.
 
+### Diagram
+<img width="1918" height="1062" alt="image" src="https://github.com/user-attachments/assets/69c2390e-e3fe-475a-8849-b5a133624795" />
 
 ### FIGURE -08 Relay On Image
+<img width="590" height="1278" alt="IMG_3516" src="https://github.com/user-attachments/assets/44830809-7b42-4182-8c7f-addc14f318e8" />
 
 ### FIGURE -09 LED On Image
+<img width="457" height="642" alt="image" src="https://github.com/user-attachments/assets/8364cfd1-e4fb-4961-bb15-b07982ae6c90" />
 
 ### FIGURE -10 Buzzer On Image
+<img width="605" height="960" alt="image" src="https://github.com/user-attachments/assets/e0c45fe1-c7bb-4c8b-a609-6944148f3d7c" />
 
-### FIGURE -11 Blynk App Screenshot for IR Sensor
-
-### FIGURE -12 Blynk App Screenshot for LDR Sensor
-
-### FIGURE -13 Blynk App Screenshot for Relay ON
-
-### FIGURE -11 Blynk App Screenshot for Relay OFF
+### FIGURE -11 Blynk App Screenshot for Relay ON
+<img width="590" height="1278" alt="IMG_3512" src="https://github.com/user-attachments/assets/c7eee69f-16e5-452d-9aac-52ecaaac9534" />
 
 ### FIGURE -12 Blynk App Screenshot for Buzzer ON
+<img width="590" height="1278" alt="IMG_3518" src="https://github.com/user-attachments/assets/2cbc7d53-fa1c-4716-80c6-7efb437093be" />
 
-### FIGURE -13 Blynk App Screenshot for Buzzer OFF
+### FIGURE -13 Blynk App Screenshot for LED ON
+<img width="590" height="1278" alt="IMG_3508" src="https://github.com/user-attachments/assets/d875c82e-6100-40d0-aff7-fc93fbc206d6" />
 
-### FIGURE -14 Blynk App Screenshot for LED ON
-
-### FIGURE -15 Blynk App Screenshot for LED OFF
-
-
-
+### FIGURE - 14 Terminal
+<img width="652" height="722" alt="Screenshot 2026-05-20 114422" src="https://github.com/user-attachments/assets/656bf8b0-9c22-48ed-8424-82bdcd3f1c3a" />
 
 ## **RESULT:**  
 Thus, the sensor values from the **IR and LDR sensors** were successfully monitored in the **Blynk mobile application using Raspberry Pi 4**, and the** output devices (LED, buzzer, and relay)** were controlled through the **Blynk interface based on the sensor inputs** and user commands.
