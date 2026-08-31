@@ -239,7 +239,7 @@ while True:
 •	LED turns ON/OFF
 •	Buzzer produces sound
 •	Relay switches the connected load
-<img width="590" height="1278" alt="IMG_3508" src="https://github.com/user-attachments/assets/d80804c8-0f88-4567-8965-58c3506e2535" />
+
 
 ### **Learners should attach:**
 1.	Screenshot of the Blynk dashboard showing sensor values.
@@ -249,8 +249,7 @@ while True:
 ### Diagram
 <img width="1918" height="1062" alt="image" src="https://github.com/user-attachments/assets/69c2390e-e3fe-475a-8849-b5a133624795" />
 
-### FIGURE -08 Relay On Image
-<img width="590" height="1278" alt="IMG_3516" src="https://github.com/user-attachments/assets/44830809-7b42-4182-8c7f-addc14f318e8" />
+
 
 ### FIGURE -09 LED On Image
 <img width="457" height="642" alt="image" src="https://github.com/user-attachments/assets/8364cfd1-e4fb-4961-bb15-b07982ae6c90" />
