@@ -257,8 +257,7 @@ while True:
 ### FIGURE -10 Buzzer On Image
 <img width="605" height="960" alt="image" src="https://github.com/user-attachments/assets/e0c45fe1-c7bb-4c8b-a609-6944148f3d7c" />
 
-### FIGURE -13 Blynk App Screenshot for LED ON
-<img width="590" height="1278" alt="IMG_3508" src="https://github.com/user-attachments/assets/d875c82e-6100-40d0-aff7-fc93fbc206d6" />
+
 
 ### FIGURE - 14 Terminal
 <img width="652" height="722" alt="Screenshot 2026-05-20 114422" src="https://github.com/user-attachments/assets/656bf8b0-9c22-48ed-8424-82bdcd3f1c3a" />
