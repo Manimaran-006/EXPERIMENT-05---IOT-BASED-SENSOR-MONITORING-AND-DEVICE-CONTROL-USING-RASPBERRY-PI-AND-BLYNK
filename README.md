@@ -258,18 +258,34 @@ while True:
 ### FIGURE -10 Buzzer On Image
 <img width="605" height="960" alt="image" src="https://github.com/user-attachments/assets/e0c45fe1-c7bb-4c8b-a609-6944148f3d7c" />
 
-### FIGURE -11 Blynk App Screenshot for Relay ON
-<img width="590" height="1278" alt="IMG_3512" src="https://github.com/user-attachments/assets/c7eee69f-16e5-452d-9aac-52ecaaac9534" />
-
-### FIGURE -12 Blynk App Screenshot for Buzzer ON
-<img width="590" height="1278" alt="IMG_3518" src="https://github.com/user-attachments/assets/2cbc7d53-fa1c-4716-80c6-7efb437093be" />
-
 ### FIGURE -13 Blynk App Screenshot for LED ON
 <img width="590" height="1278" alt="IMG_3508" src="https://github.com/user-attachments/assets/d875c82e-6100-40d0-aff7-fc93fbc206d6" />
 
 ### FIGURE - 14 Terminal
 <img width="652" height="722" alt="Screenshot 2026-05-20 114422" src="https://github.com/user-attachments/assets/656bf8b0-9c22-48ed-8424-82bdcd3f1c3a" />
+### FIGURE -11 Blynk App Screenshot for IR Sensor
+<img width="728" height="1600" alt="image" src="https://github.com/user-attachments/assets/c365983f-e595-4a20-a4a7-d71d18b76644" />
 
+### FIGURE -12 Blynk App Screenshot for LDR Sensor
+<img width="728" height="1600" alt="image" src="https://github.com/user-attachments/assets/7d5950ee-c44e-4188-8b42-20735332e9db" />
+
+### FIGURE -13 Blynk App Screenshot for Relay ON
+<img width="728" height="1600" alt="image" src="https://github.com/user-attachments/assets/d6f33e02-9f35-4bd1-937f-e1447a338c7e" />
+
+### FIGURE -11 Blynk App Screenshot for Relay OFF
+<img width="728" height="1600" alt="image" src="https://github.com/user-attachments/assets/4360493a-9289-4aac-b95a-1a7bb6131f21" />
+
+### FIGURE -12 Blynk App Screenshot for Buzzer ON
+<img width="728" height="1600" alt="image" src="https://github.com/user-attachments/assets/874f86dc-ed9b-4e3b-a28d-bd313c58f451" />
+
+### FIGURE -13 Blynk App Screenshot for Buzzer OFF
+<img width="728" height="1600" alt="image" src="https://github.com/user-attachments/assets/f1e3dc2d-b0b9-4b33-8a4c-e98693c99b60" />
+
+### FIGURE -14 Blynk App Screenshot for LED ON
+<img width="728" height="1600" alt="image" src="https://github.com/user-attachments/assets/36ae3b62-652a-4303-abdc-a3021e1d809e" />
+
+### FIGURE -15 Blynk App Screenshot for LED OFF
+<img width="728" height="1600" alt="image" src="https://github.com/user-attachments/assets/74e1f387-64b2-405f-8445-ee73bdd22077" />
 ## **RESULT:**  
 Thus, the sensor values from the **IR and LDR sensors** were successfully monitored in the **Blynk mobile application using Raspberry Pi 4**, and the** output devices (LED, buzzer, and relay)** were controlled through the **Blynk interface based on the sensor inputs** and user commands.
 
