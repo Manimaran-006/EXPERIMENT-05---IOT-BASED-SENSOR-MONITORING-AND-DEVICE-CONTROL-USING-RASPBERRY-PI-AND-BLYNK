@@ -257,10 +257,6 @@ while True:
 ### FIGURE -10 Buzzer On Image
 <img width="605" height="960" alt="image" src="https://github.com/user-attachments/assets/e0c45fe1-c7bb-4c8b-a609-6944148f3d7c" />
 
-
-
-### FIGURE - 14 Terminal
-<img width="652" height="722" alt="Screenshot 2026-05-20 114422" src="https://github.com/user-attachments/assets/656bf8b0-9c22-48ed-8424-82bdcd3f1c3a" />
 ### FIGURE -11 Blynk App Screenshot for IR Sensor
 <img width="728" height="1600" alt="image" src="https://github.com/user-attachments/assets/c365983f-e595-4a20-a4a7-d71d18b76644" />
 
@@ -269,6 +265,9 @@ while True:
 
 ### FIGURE -13 Blynk App Screenshot for Relay ON
 <img width="728" height="1600" alt="image" src="https://github.com/user-attachments/assets/d6f33e02-9f35-4bd1-937f-e1447a338c7e" />
+
+### FIGURE - 14 Terminal
+<img width="652" height="722" alt="Screenshot 2026-05-20 114422" src="https://github.com/user-attachments/assets/656bf8b0-9c22-48ed-8424-82bdcd3f1c3a" />
 
 ### FIGURE -11 Blynk App Screenshot for Relay OFF
 <img width="728" height="1600" alt="image" src="https://github.com/user-attachments/assets/4360493a-9289-4aac-b95a-1a7bb6131f21" />
