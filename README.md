@@ -283,7 +283,10 @@ while True:
 
 ### FIGURE -15 Blynk App Screenshot for LED OFF
 <img width="728" height="1600" alt="image" src="https://github.com/user-attachments/assets/74e1f387-64b2-405f-8445-ee73bdd22077" />
-## **RESULT:**  
+
+
+
+## RESULT:
 Thus, the sensor values from the **IR and LDR sensors** were successfully monitored in the **Blynk mobile application using Raspberry Pi 4**, and the** output devices (LED, buzzer, and relay)** were controlled through the **Blynk interface based on the sensor inputs** and user commands.
 
 ---
